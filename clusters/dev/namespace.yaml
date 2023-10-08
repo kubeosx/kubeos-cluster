@@ -1,0 +1,12 @@
+kind: Namespace
+apiVersion: v1
+metadata:
+  name: dev
+  #labels:
+  #annotations:
+
+# ---
+# kind: Namespace
+# apiVersion: v1
+# metadata:
+#   name: monitoring
