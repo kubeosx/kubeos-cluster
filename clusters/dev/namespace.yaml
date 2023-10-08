@@ -1,12 +1,12 @@
 kind: Namespace
 apiVersion: v1
 metadata:
-  name: dev
-  #labels:
-  #annotations:
+  name: kubeos
+  labels:
+  annotations:
 
-# ---
-# kind: Namespace
-# apiVersion: v1
-# metadata:
-#   name: monitoring
+---
+kind: Namespace
+apiVersion: v1
+metadata:
+  name: dev
