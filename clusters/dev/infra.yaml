@@ -1,25 +1,25 @@
 apiVersion: source.toolkit.fluxcd.io/v1beta2
 kind: GitRepository
 metadata:
-  name: infra
+  name: kubeos-baseline
   namespace: kubeos
 spec:
   interval: 1m0s
   ref:
     branch: main
-  url: https://github.com/cloud-first-approach/Evolution.infra
+  url: https://github.com/kubeos/kubeos-baseline
 
 ---
 
 apiVersion: kustomize.toolkit.fluxcd.io/v1beta2
 kind: Kustomization
 metadata:
-  name: infra
+  name: kubeos-baseline
   namespace: kubeos
 spec:
   interval: 1m0s
-  path: ./deploy/k8s/infra/overlays/dev
+  path: ./addons/overlays/dev
   prune: true
   sourceRef:
     kind: GitRepository
-    name: infra
+    name: kubeos-baseline
