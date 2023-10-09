@@ -18,3 +18,4 @@ spec:
   type: service
   owner: infrastructure
   lifecycle: experimental
+  system: kubeos-idp
