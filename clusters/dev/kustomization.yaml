@@ -5,3 +5,4 @@ resources:
   - infra.yaml
   - kdotnetapi/
   - kdotnetapi1/
+  - kapi2/
