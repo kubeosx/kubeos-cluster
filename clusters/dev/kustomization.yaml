@@ -4,4 +4,4 @@ resources:
   - namespace.yaml
   - infra.yaml
 
-  - kdotnetapi/kdotnetapi.yaml
+  - kdotnetapi/kdotnetapi.yaml  - kdotnetapi1/
