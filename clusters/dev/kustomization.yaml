@@ -3,5 +3,5 @@ kind: Kustomization
 resources:
   - namespace.yaml
   - infra.yaml
-
-  - kdotnetapi/kdotnetapi.yaml  - kdotnetapi1/
+  - kdotnetapi/
+  - kdotnetapi1/
