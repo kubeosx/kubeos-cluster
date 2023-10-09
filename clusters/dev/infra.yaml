@@ -7,7 +7,7 @@ spec:
   interval: 1m0s
   ref:
     branch: main
-  url: https://github.com/kubeos/kubeos-baseline
+  url: https://github.com/kubeosx/kubeos-baseline
 
 ---
 
