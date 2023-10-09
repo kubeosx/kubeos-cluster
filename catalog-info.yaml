@@ -7,6 +7,9 @@ metadata:
   annotations:
     github.com/project-slug: kubeosx/kubeos-cluster
     backstage.io/techdocs-ref: dir:.
+  tags:
+    - kubernetes-cluster
+    - flux-sync 
 spec:
   type: service
   owner: infrastructure
