@@ -3,4 +3,5 @@ kind: Kustomization
 resources:
   - namespace.yaml
   - infra.yaml
-  - app1/  - app2/
+  - app1/  
+  - app2/
