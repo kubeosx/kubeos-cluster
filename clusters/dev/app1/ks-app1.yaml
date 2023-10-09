@@ -5,7 +5,7 @@ metadata:
   namespace: dev
 spec:
   interval: 1m0s
-  path: 
+  path: ./deploy/k8s/overlays/dev
   prune: true
   sourceRef:
     kind: GitRepository
