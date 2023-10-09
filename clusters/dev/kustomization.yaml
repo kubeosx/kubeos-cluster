@@ -5,4 +5,5 @@ resources:
   - infra.yaml
   - app1/  
   - app2/
-  - app3/  - dotnetapi/
+  - app3/  
+  - dotnetapi/
