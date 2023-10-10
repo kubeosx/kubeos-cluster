@@ -6,3 +6,4 @@ resources:
 
   - dotnetapi/
   - shopwebapi/
+  - nodejob/
