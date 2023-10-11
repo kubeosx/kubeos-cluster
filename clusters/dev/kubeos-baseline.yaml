@@ -1,0 +1,25 @@
+apiVersion: source.toolkit.fluxcd.io/v1beta2
+kind: GitRepository
+metadata:
+  name: kubeos-baseline
+  namespace: kubeos
+spec:
+  interval: 1m0s
+  ref:
+    branch: main
+  url: https://github.com/kubeosx/kubeos-baseline
+
+---
+
+apiVersion: kustomize.toolkit.fluxcd.io/v1beta2
+kind: Kustomization
+metadata:
+  name: kubeos-baseline
+  namespace: kubeos
+spec:
+  interval: 1m0s
+  path: ./addons/overlays/dev
+  prune: true
+  sourceRef:
+    kind: GitRepository
+    name: kubeos-baseline
