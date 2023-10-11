@@ -3,7 +3,3 @@ kind: Kustomization
 resources:
   - namespace.yaml
   - kubeos-baseline.yaml
-  - nodejob/
-
-  - zapper/
-  - dotserver/
