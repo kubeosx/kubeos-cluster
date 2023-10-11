@@ -6,3 +6,4 @@ resources:
   - nodejob/
 
   - zapper/
+  - dotserver/
