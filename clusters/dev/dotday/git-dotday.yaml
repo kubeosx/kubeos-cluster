@@ -3,6 +3,9 @@ kind: GitRepository
 metadata:
   name: dotday
   namespace: dev
+  labels:
+    backstage.io/kubernetes-id: "dotday"
+    backstage.io/kubernetes-namespace: "dev"
 spec:
   interval: 1m0s
   ref:
