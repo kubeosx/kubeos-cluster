@@ -6,6 +6,9 @@ metadata:
   labels:
     backstage.io/kubernetes-id: "dotday"
     backstage.io/kubernetes-namespace: "dev"
+  annotations:
+    backstage.io/kubernetes-id: "dotday"
+    backstage.io/kubernetes-namespace: "dev"
 spec:
   interval: 1m0s
   path: ./deploy/k8s/overlays/dev
