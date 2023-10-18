@@ -3,7 +3,4 @@ kind: Kustomization
 resources:
   - namespace.yaml
   - kubeos-baseline.yaml
-  - dot5/
-  - dot6/
-
   - dot7/
