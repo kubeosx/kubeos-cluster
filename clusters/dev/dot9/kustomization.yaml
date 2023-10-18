@@ -1,8 +1,5 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:
-  - namespace.yaml
-  - kubeos-baseline.yaml
-  - dot7/
-  - dot8/
-  - dot9/
+  - git-dot9.yaml
+  - ks-dot9.yaml
