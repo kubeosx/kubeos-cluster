@@ -5,3 +5,4 @@ resources:
   - kubeos-baseline.yaml
   - dotfour/
   - dotseven/
+  - dot1/
