@@ -1,0 +1,10 @@
+apiVersion: source.toolkit.fluxcd.io/v1beta2
+kind: GitRepository
+metadata:
+  name: testapp1
+  namespace: dev
+spec:
+  interval: 1m0s
+  ref:
+    branch: main
+  url: https://github.com/kubeosx/testapp1
