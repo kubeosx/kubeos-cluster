@@ -4,5 +4,3 @@ resources:
   - namespace.yaml
   - kubeos-baseline.yaml
   - dnsutils.yaml
-  - dot14/
-  - dot15/
