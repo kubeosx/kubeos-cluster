@@ -5,4 +5,3 @@ resources:
   - kubeos-baseline.yaml
   - dnsutils.yaml
   - dotapi1/
-  - dot.api/
