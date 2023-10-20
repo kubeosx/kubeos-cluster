@@ -6,3 +6,4 @@ resources:
   - dnsutils.yaml
   - dot14/
   - dot15/
+  - dot21/
