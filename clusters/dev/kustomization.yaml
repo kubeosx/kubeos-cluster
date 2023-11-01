@@ -7,3 +7,4 @@ resources:
   - dotapi1/
   - payment-api/
   - shopcart-api/
+  - vault-test/
