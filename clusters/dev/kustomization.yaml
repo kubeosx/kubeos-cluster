@@ -6,3 +6,4 @@ resources:
   - dnsutils.yaml
   - dotapi1/
   - payment-api/
+  - shopcart-api/
