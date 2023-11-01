@@ -3,6 +3,8 @@ kind: GitRepository
 metadata:
   name: shopcart-api
   namespace: dev
+  annotations:
+    backstage.io/kubernetes-id: "ShopCart.Api"
 spec:
   interval: 1m0s
   ref:
