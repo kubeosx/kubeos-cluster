@@ -1,8 +1,12 @@
 
 vault policy write vault-test-policy - <<EOH
-path "kubeos/dev/vault-test"
+path "kubeos/dev/vault-test/*"
 {
   capabilities = ["create", "read", "update", "delete", "list"]
+}
+path "kubeos/dev/*"
+{
+  capabilities = ["create", "read", "update", "delete", "list", "sudo"]
 }
 EOH
 

@@ -4,7 +4,3 @@ resources:
   - namespace.yaml
   - kubeos-baseline.yaml
   - dnsutils.yaml
-  - dotapi1/
-  - payment-api/
-  - shopcart-api/
-  - vault-test/
