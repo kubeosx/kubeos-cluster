@@ -1,18 +1,14 @@
 
-vault policy write vault-test-policy - <<EOH
-path "kubeos/dev/vault-test/*"
+vault policy write one-api-policy - <<EOH
+path "kubeos/dev/one-api"
 {
   capabilities = ["create", "read", "update", "delete", "list"]
-}
-path "kubeos/dev/*"
-{
-  capabilities = ["create", "read", "update", "delete", "list", "sudo"]
 }
 EOH
 
 
-vault write auth/kubernetes/role/vault-test \
-        bound_service_account_names=vault-test \
+vault write auth/kubernetes/role/one-api \
+        bound_service_account_names=one-api \
         bound_service_account_namespaces=dev \
-        policies=vault-test-policy \
+        policies=one-api-policy \
         ttl=72h
