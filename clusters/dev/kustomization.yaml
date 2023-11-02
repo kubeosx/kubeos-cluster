@@ -6,3 +6,4 @@ resources:
   - dnsutils.yaml
 
   - vault-test-1/
+  - two-api/
