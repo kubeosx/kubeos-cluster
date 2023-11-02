@@ -4,3 +4,5 @@ resources:
   - namespace.yaml
   - kubeos-baseline.yaml
   - dnsutils.yaml
+
+  - vault-test-1/
