@@ -20,3 +20,5 @@ vault write auth/kubernetes/role/two-api \
         bound_service_account_namespaces=dev \
         policies=two-api-policy \
         ttl=72h
+
+vault kv put kubeos/dev/two-api name=two-api
