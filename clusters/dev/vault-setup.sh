@@ -1,6 +1,6 @@
 
-vault policy write two-api-policy - <<EOH
-path "kubeos/dev/two-api"
+vault policy write three-api-policy - <<EOH
+path "kubeos/dev/three-api"
 {
   capabilities = ["create", "read", "update", "delete", "list"]
 }
@@ -15,10 +15,10 @@ path "kubeos/*"
 EOH
 
 
-vault write auth/kubernetes/role/two-api \
-        bound_service_account_names=two-api \
+vault write auth/kubernetes/role/three-api \
+        bound_service_account_names=three-api \
         bound_service_account_namespaces=dev \
-        policies=two-api-policy \
+        policies=three-api-policy \
         ttl=72h
 
-vault kv put kubeos/dev/two-api name=two-api
+vault kv put kubeos/dev/three-api name=three-api
