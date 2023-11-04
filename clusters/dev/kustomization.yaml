@@ -6,3 +6,4 @@ resources:
   - dnsutils.yaml
   - two-api/
   - three-api/
+  - six-api/
