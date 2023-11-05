@@ -1,6 +1,6 @@
 
-vault policy write six-api-policy - <<EOH
-path "kubeos/dev/six-api"
+vault policy write seven-api-policy - <<EOH
+path "kubeos/dev/seven-api"
 {
   capabilities = ["create", "read", "update", "delete", "list"]
 }
@@ -15,10 +15,10 @@ path "kubeos/*"
 EOH
 
 
-vault write auth/kubernetes/role/six-api \
-        bound_service_account_names=six-api \
+vault write auth/kubernetes/role/seven-api \
+        bound_service_account_names=seven-api \
         bound_service_account_namespaces=dev \
-        policies=six-api-policy \
+        policies=seven-api-policy \
         ttl=72h
 
-vault kv put kubeos/dev/six-api name=six-api
+vault kv put kubeos/dev/seven-api name=seven-api
