@@ -4,8 +4,4 @@ resources:
   - namespace.yaml
   - kubeos-baseline.yaml
   - dnsutils.yaml
-  - two-api/
-  - three-api/
-  - six-api/
-  - seven-api/
   - eight-api/
