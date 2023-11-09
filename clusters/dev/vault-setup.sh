@@ -1,6 +1,6 @@
 
-vault policy write eight-api-policy - <<EOH
-path "kubeos/dev/eight-api"
+vault policy write demo-api-policy - <<EOH
+path "kubeos/dev/demo-api"
 {
   capabilities = ["create", "read", "update", "delete", "list"]
 }
@@ -15,10 +15,10 @@ path "kubeos/*"
 EOH
 
 
-vault write auth/kubernetes/role/eight-api \
-        bound_service_account_names=eight-api \
+vault write auth/kubernetes/role/demo-api \
+        bound_service_account_names=demo-api \
         bound_service_account_namespaces=dev \
-        policies=eight-api-policy \
+        policies=demo-api-policy \
         ttl=72h
 
-vault kv put kubeos/dev/eight-api name=eight-api
+vault kv put kubeos/dev/demo-api name=demo-api
