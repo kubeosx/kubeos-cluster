@@ -1,0 +1,20 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: kubeos-baseline-dev
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/kubeosx/kubeos-baseline
+    targetRevision: HEAD
+    path: addons/overlays/dev
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: kubeos-baseline
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true
